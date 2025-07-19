@@ -226,7 +226,7 @@ if __name__ == '__main__':
         bot_thread.start()
 
         # Run the web server in the main thread
-        # Railway will provide the PORT environment variable
-        port = int(os.environ.get('PORT', 8080))
-        print(f"Flask app starting on port {port}")
-        app.run(host='0.0.0.0', port=port)
+# Railway will provide the PORT environment variable
+port = int(os.environ.get('PORT', 8080))
+print(f"Flask app starting on port {port}")
+app.run(host='0.0.0.0', port=port)
